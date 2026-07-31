@@ -2,7 +2,7 @@
     
     --primary-color: #141D38;
     --secondary-color: #F28CBA;
-
+    --accent-color: #7ab3eb;
     --background-color: #eef1f7;
     --card-background: #ffffff;
 
@@ -391,7 +391,7 @@ body {
 
 .card-footer button:not(.primary) {
 
-    background: var(--primary-color);
+    background: var(--accent-color);
 
     color: white;
 
