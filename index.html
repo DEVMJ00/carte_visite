@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de visite - Mario</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icônes -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<main class="container">
+
+    <article class="card">
+
+        <!-- Bandeau -->
+        <header class="card-header">
+            <div>
+                <p class="document-type">CARTE DE VISITE NUMÉRIQUE</p>
+                <h1>Mario XXXXX</h1>
+                <p class="job-title">
+                    Gestionnaire de base de données patrimoniale
+                </p>
+            </div>
+
+            <img src="assets/img/photo.jpg"
+                 alt="Photo de Mario"
+                 class="photo">
+        </header>
+
+        <!-- Corps -->
+        <section class="card-body">
+
+            <div class="identity">
+
+                <div class="info">
+                    <span class="label">Téléphone</span>
+
+                    <a href="tel:+33600000000">
+                        <i class="fa-solid fa-phone"></i>
+                        06 00 00 00 00
+                    </a>
+
+                    <button class="copy-btn"
+                            data-copy="06 00 00 00 00">
+                        Copier
+                    </button>
+                </div>
+
+                <div class="info">
+                    <span class="label">Email</span>
+
+                    <a href="mailto:mario@email.fr">
+                        <i class="fa-solid fa-envelope"></i>
+                        mario@email.fr
+                    </a>
+
+                    <button class="copy-btn"
+                            data-copy="mario@email.fr">
+                        Copier
+                    </button>
+                </div>
+
+                <div class="info">
+                    <span class="label">Portfolio</span>
+
+                    <a href="https://devmj00.github.io"
+                       target="_blank">
+                        <i class="fa-solid fa-globe"></i>
+                        devmj00.github.io
+                    </a>
+                </div>
+
+                <div class="info">
+                    <span class="label">GitHub</span>
+
+                    <a href="https://github.com/devmj00"
+                       target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        github.com/devmj00
+                    </a>
+                </div>
+
+                <div class="info">
+                    <span class="label">LinkedIn</span>
+
+                    <a href="#"
+                       target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        linkedin.com/in/...
+                    </a>
+                </div>
+
+            </div>
+
+            <aside class="extras">
+
+                <img src="assets/img/qrcode.png"
+                     alt="QR Code"
+                     class="qr-code">
+
+                <p class="scan">
+                    Scanner pour enregistrer cette carte
+                </p>
+
+            </aside>
+
+        </section>
+
+        <!-- Pied -->
+        <footer class="card-footer">
+
+            <button id="downloadVCF" class="primary">
+                <i class="fa-solid fa-address-card"></i>
+                Enregistrer le contact
+            </button>
+
+            <button id="shareCard">
+                <i class="fa-solid fa-share-nodes"></i>
+                Partager
+            </button>
+
+        </footer>
+
+    </article>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
