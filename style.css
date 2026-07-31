@@ -1,0 +1,506 @@
+:root {
+    --primary-color: #141D38;
+    --secondary-color: #FCDB32;
+
+    --background-color: #eef1f7;
+    --card-background: #ffffff;
+
+    --text-color: #141D38;
+    --light-text: #ffffff;
+
+    --border-radius: 22px;
+    --shadow: 0 20px 50px rgba(0,0,0,0.18);
+}
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #ffffff,
+            var(--background-color)
+        );
+
+    color: var(--text-color);
+}
+
+
+/* CONTENEUR */
+
+.container {
+
+    width: 100%;
+    max-width: 650px;
+
+}
+
+
+/* CARTE */
+
+.card {
+
+    width: 100%;
+
+    aspect-ratio: 1.586;
+
+    background: var(--card-background);
+
+    border-radius: var(--border-radius);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgba(20,29,56,0.15);
+
+}
+
+
+/* FILIGRANE */
+
+.card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(20,29,56,0.04) 1px,
+            transparent 1px
+        );
+
+    background-size: 12px 12px;
+
+    pointer-events: none;
+
+}
+
+
+
+/* HEADER */
+
+.card-header {
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--primary-color),
+            #26345f
+        );
+
+    color: var(--light-text);
+
+    height: 35%;
+
+    padding: 1.5rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: relative;
+
+}
+
+
+.document-type {
+
+    font-size: .65rem;
+
+    letter-spacing: 2px;
+
+    opacity: .75;
+
+    margin-bottom: .5rem;
+
+}
+
+
+.card-header h1 {
+
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+
+    margin-bottom: .4rem;
+
+}
+
+
+.job-title {
+
+    font-size: .85rem;
+
+    max-width: 280px;
+
+    opacity: .9;
+
+}
+
+
+
+/* PHOTO */
+
+.photo {
+
+    width: 95px;
+
+    height: 115px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    border: 3px solid var(--secondary-color);
+
+}
+
+
+
+/* CORPS */
+
+.card-body {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding: 1.2rem;
+
+}
+
+
+.identity {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: .6rem;
+
+}
+
+
+
+/* INFORMATIONS */
+
+.info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .5rem;
+
+    font-size: .85rem;
+
+}
+
+
+.label {
+
+    width: 75px;
+
+    font-size: .7rem;
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+
+    opacity: .55;
+
+}
+
+
+.info a {
+
+    color: var(--primary-color);
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .4rem;
+
+}
+
+
+.info a:hover {
+
+    color: #5268aa;
+
+}
+
+
+/* BOUTON COPIE */
+
+.copy-btn {
+
+    margin-left: auto;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: .7rem;
+
+    cursor: pointer;
+
+    color: var(--primary-color);
+
+}
+
+
+
+/* QR CODE */
+
+.extras {
+
+    width: 120px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.qr-code {
+
+    width: 90px;
+
+    height: 90px;
+
+    object-fit: contain;
+
+}
+
+
+.scan {
+
+    margin-top: .5rem;
+
+    text-align: center;
+
+    font-size: .65rem;
+
+}
+
+
+
+/* FOOTER */
+
+.card-footer {
+
+    height: 18%;
+
+    padding: .8rem 1.2rem;
+
+    display: flex;
+
+    gap: .8rem;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.card-footer button {
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: .7rem 1rem;
+
+    border-radius: 50px;
+
+    font-size: .85rem;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .5rem;
+
+    transition: .25s ease;
+
+}
+
+
+
+.primary {
+
+    background: var(--secondary-color);
+
+    color: var(--primary-color);
+
+    font-weight: bold;
+
+}
+
+
+
+.card-footer button:not(.primary) {
+
+    background: var(--primary-color);
+
+    color: white;
+
+}
+
+
+
+.card-footer button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* RESPONSIVE TABLET */
+
+@media(max-width:700px) {
+
+
+    body {
+
+        padding: 1rem;
+
+    }
+
+
+    .card {
+
+        aspect-ratio: auto;
+
+        min-height: 600px;
+
+    }
+
+
+    .card-header {
+
+        height:auto;
+
+        padding:1.2rem;
+
+    }
+
+
+    .photo {
+
+        width:75px;
+
+        height:90px;
+
+    }
+
+
+}
+
+
+
+/* RESPONSIVE MOBILE */
+
+@media(max-width:450px) {
+
+
+    .card-body {
+
+        flex-direction: column;
+
+    }
+
+
+    .extras {
+
+        width:100%;
+
+        flex-direction:row;
+
+        gap:1rem;
+
+    }
+
+
+    .card-footer {
+
+        flex-direction:column;
+
+        height:auto;
+
+    }
+
+
+    .card-footer button {
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+
+    .info {
+
+        flex-wrap:wrap;
+
+    }
+
+
+    .label {
+
+        width:100%;
+
+    }
+
+  }
