@@ -48,8 +48,8 @@ TITLE:${contact.job}
 TEL;TYPE=CELL:${contact.phone}
 EMAIL:${contact.email}
 URL:${contact.website}
-NOTE:GitHub ${contact.github}
-NOTE:LinkedIn ${contact.linkedin}
+NOTE:GitHub : ${contact.github}
+NOTE:LinkedIn : ${contact.linkedin}
 END:VCARD`;
 
 
@@ -216,7 +216,7 @@ END:VCARD`;
 
 
                     text:
-                    "Ma carte de visite numérique",
+                    "Mes coordonnées : ",
 
 
                     url:
