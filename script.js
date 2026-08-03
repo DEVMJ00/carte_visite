@@ -11,19 +11,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         firstname: "Mario",
 
-        lastname: "XXXXX",
+        lastname: "JODAR",
 
-        phone: "+33600000000",
+        phone: "+33674648976",
 
-        email: "mario@email.fr",
+        email: "mario.jodar34@gmail.com",
 
-        website: "https://devmj00.github.io",
+        website: "",
 
-        github: "https://github.com/devmj00",
+        github: "",
 
-        linkedin: "https://linkedin.com/in/xxxxx",
+        linkedin: "https://linkedin.com/in/mario-jodar",
 
-        job: "Gestionnaire de base de données patrimoniale"
+        job: "Ancien Chargé de Secteur - CS504"
 
     };
 
